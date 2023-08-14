@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+body{
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+
+/* navbar */
+/* #neubar {
+    background: #fae8d2;
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
+  }
+  
+  .nav-item .active {
+    border-radius: 6px;
+    background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
+    box-shadow:  4px 4px 8px #ddc1a0,
+                 -4px -4px 8px #f7e5cc;
+  }
+  #neubar .dropdown-menu a:hover {
+    color: #454545
+  }
+  #neubar .nav-item {
+    margin : auto 4px;
+  }
+  #neubar a {
+  
+    padding-left:12px;
+    padding-right:12px;
+  }
+  #neubar .dropdown-menu {
+    background : #545454
+  }
+  a.navbar-brand {
+    color: #454545
+  } */
+  #mainNavigation a {
+    font-family: 'Cabin', sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:1px 1px 2px rgba(0,0,0,0.4)
+  }
+  
+  .dropdown-menu {
+    background:#03727d
+  }
+  a.dropdown-toggle {
+    color:#dfdfdf !important
+  }
+  a.dropdown-item:hover {
+    color:#03727d !important
+  }
+  .nav-item a{
+    color:#dfdfdf;
+  }
+  .nav-item a:hover {
+    color:#fff
+  }
+  .nav-item{
+    min-width:12vw;
+  }
+  #mainNavigation {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:123;
+    padding-bottom:120px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  
+  
+  background: -moz-linear-gradient(top,  rgba(205, 195, 195, 0.65) 0%, rgba(184, 174, 174, 0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(169, 149, 149, 0.65) 0%,rgba(156, 136, 136, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(192, 161, 161, 0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+  #navbarNavDropdown.collapsing .navbar-nav,
+  #navbarNavDropdown.show .navbar-nav{
+    background:#037582;
+    padding:12px;
+  }
+
+
+  /* banner */
+  .banner-image{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(https://marketplace.canva.com/EAEoL-1dDoo/1/0/800w/canva-jewelry-instagram-post-HB7Bzxg5RmM.jpg);
+    background-size: cover;
+    max-height: 800px !important;
+  }
+  
+  h3{
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 45px;
+  }
+  
+/* categories */
+.line-icon {
+    text-align: center;
+  }
+  
+  /* Joined both selectors, since were pretty much the same */
+  .line-icon::before,
+  .line-icon::after {      
+    /* Styles kept */
+    width: 30%;
+    height: 15px;
+  
+  
+    /* Changed to border-top (instead of border) to simulate a line better */
+    border-top: 2px solid black; 
+  
+    /* Styles added */
+    display: inline-block;
+    content: '';
+  
+    /* Use padding to vertical align the line */
+    /* Use padding in em for a responsive icon height */
+    padding-top: 0.5em; 
+  
+    /* Use margins to give the lines some spacement around the icon */
+    /* Use margins in % for a responsive spacement */
+    margin-left: 1%; 
+    margin-right: 1%;
+  }
+  
+  
+  
+  /* card css starts here */
+  .outer{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient( #FFEEE7,#B7C4CF);
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,.7) 0px 4px 12px;
+   
+  }
+  .outer .card{
+    position: relative;
+    top:-30%;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    /* transition: 1s; */
+    box-shadow: rgba(0,0,0,.7) 0px 4px 12px;
+    transform: translate(-50% -50%);
+  
+  }
+  .outer .card:hover{
+    transform: scale(1.3)
+    rotate(-0deg);
+  }
+  .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+   
+  }
+  .outer .content{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+   
+  
+  }
+  .outer h3{
+     text-align: center;
+     color: transparent;
+     background: linear-gradient(#41311B #f8c842);
+     -webkit-background-clip: text;
+     background-clip: text;
+  
+    
+     text-shadow: rgba(0,0,0,.5) 0px 6px 10px;
+     
+  
+  }
+  
+  .content h3,p{
+  
+    position: relative;
+    top:-26%;
+    /* left:5%;    */
+    text-align: center;
+    /* color: transparent;
+    background: linear-gradient(#41311B #f8c842);
+    -webkit-background-clip: text;
+    background-clip: text;
+   
+    text-shadow: rgba(0,0,0,.5) 0px 6px 10px;
+     */
+  
+  }
+  .expbtn{
+    width: 40%;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 50px;
+    padding: 2px;
+    font-size: 20px;
+  }
+  
+  .expbtn:hover{
+    color: white;
+    background-color: black;
+  }
+  /* card css ends here */
+
+  /* collections */
+  .card-body:hover{
+    background-color: white;
+    color: #E3CCAE;
+  }
+  .card{
+    border: 1px solid transparent;
+  }
+  .card-img-top{
+  height: 500px;
+  width: 100%;
+  }
+
+  @media (max-width: 768px) {
+  
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+  
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-start,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+  
+  @media (min-width: 768px) {
+   
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+  
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+  
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+  
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+  }
+  
+
+  .banner2{
+    border-radius: 15px;
+  }
+  .bnrbtn{
+    position: relative;
+    background-color: white;
+    position: relative;
+    margin-top: -19%;
+    width: 35%;
+    height: 50px;
+    margin-left: 55%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+  
+  
+  }
+  
+  .services{
+    text-align: center;
+    border: 2px solid black;
+  }
+  .services:hover{
+    background-color:#F0EEED;
+  
+  }
+  i{
+    padding: 20px;
+    font-size: 20px;
+    
+  }
+  ul{
+  text-align: center;
+  
+  }
+  li{
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  }
+  
+  
+  .pftr{
+  font-weight: bold;
+  font-size: 22px;
+  }
+  .footer{
+  background-color: #EEEEEE;
+  color:black;
+  }
+  
+  .acard{
+  display: flex;
+   margin: 5px;
+   width: 25%;
+  }
+  
+
+/* chat css starts here   */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color:transparent;
+   color: white; 
+   padding: 16px 20px;
+   border: none;
+   cursor: pointer;
+   opacity: 0.8;
+   position: fixed;
+   bottom: 23px;
+   right: 5px;
+   /* width: 30px; */
+ }
+ 
+ /* The popup chat - hidden by default */
+ .chat-popup {
+   display: none;
+   position: fixed;
+   bottom: 0;
+   right: 15px;
+   border: 3px solid #f1f1f1;
+   z-index: 9;
+ }
+ 
+ /* Add styles to the form container */
+ .form-container {
+   max-width: 300px;
+   padding: 10px;
+   background-color: white;
+ }
+ 
+ /* Full-width textarea */
+ .form-container textarea {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   border: none;
+   background: #f1f1f1;
+   resize: none;
+   min-height: 200px;
+ }
+ 
+ /* When the textarea gets focus, do something */
+ .form-container textarea:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+ 
+ /* Set a style for the submit/send button */
+ .form-container .btn {
+   background-color: #04AA6D;
+   color: white;
+   padding: 16px 20px;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   margin-bottom:10px;
+   opacity: 0.8;
+ }
+ 
+ /* Add a red background color to the cancel button */
+ .form-container .cancel {
+   background-color: red;
+ }
+ 
+ /* Add some hover effects to buttons */
+ .form-container .btn:hover, .open-button:hover {
+   opacity: 1;
+ }
+   /* chat css ends here */
+   .newbtn{
+    color: black;
+    background-color: white;
+    position: relative;
+    margin-top: -18%;
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    
+      background-image: linear-gradient(to right, black 50%, gray 50%);
+      color: #fff;
+      border-radius: 19px;
+      box-shadow: -2px 3px 11px -7px #000000b0;
+      background-size: 210%;
+      transition: .3s;
+  }
+  .newbtn:hover{
+    background-color: black;
+    color: white;
+    background-position-x: 100%;
+    
+  }   
+  .content p{
+    font-family: 'Kanit', sans-serif;
+  }
+
+
+  /* new */
+  .card-img-tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    z-index: 5
+}
+
+.card-img-tiles .main-img>img,
+.card-img-tiles .thumblistcard>img {
+    display: block;
+    width: 100%
+}
+
+.card-img-tiles .main-img {
+    width: 67%;
+    padding-right: .375rem
+}
+
+.card-img-tiles .thumblistcard {
+    width: 33%;
+    padding-left: .375rem
+}
+
+.card-img-tiles .thumblistcard>img {
+    margin-bottom: .75rem
+}
+
+.card-img-tiles .thumblistcard>img:last-child {
+    margin-bottom: 0
+}
+
+.mb-grid-gutter {
+    margin-bottom: 30px !important;
+}
+.thumblistcard{
+  height: 100px;
+margin: 1%;
+
+
+}
+
+@media only screen and (min-width: 320px) {
+  .banner-image
+  {
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .banner-image
+  {
+    width: 960px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .banner-image
+  {
+    width: 1440px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .banner-image
+  {
+    width: 2000px;
+    height: auto;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+ .banner-image
+  {
+    width: 480px;
+    height: auto;
+  }
+}
+@media only screen and (device-width: 768px) {
+ .banner-image
+  {
+    width: 768px;
+    height: auto;
+  }
+}
